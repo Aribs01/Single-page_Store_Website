@@ -1,0 +1,138 @@
+<!Doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <title>Cart</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="stylesheet" type='text/css' href="flexslider.css">
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css'>
+    <script src='bootstrap/jquery/jquery.min.js' ></script>
+    <script src='bootstrap/js/bootstrap.min.js' ></script>
+    <script type="text/javascript" src='jquery.flexslider.js'></script>
+    <script type="text/javascript" charset='utf-8'>
+      $(window).load(function()  {
+        $('.flexslider').flexslider({
+          animation:'fade',
+          controlsContainer:'.flex-container'
+        });
+      });
+    </script>
+    <style type="text/css">
+    @media (max-width: 991px) {
+      .navbar-header {
+          float: none;
+      }
+      .navbar-left,.navbar-right {
+          float: none !important;
+      }
+      .navbar-toggle {
+          display: block;
+      }
+      .navbar-collapse {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+      .navbar-collapse.collapse {
+          display: none!important;
+      }
+      .navbar-nav {
+          float: none!important;
+      margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+          float: none;
+      }
+      .navbar-nav>li>a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+      .collapse.in{
+        display:block !important;
+    }
+
+    .search {
+              width:100%;
+    }
+
+    .search input.form-control  {
+                            width:100%;
+                            margin-bottom:10px;
+    }
+    button[class='btn btn-outline-primary'] {
+                                              width:100%;
+                                            }
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <div >
+
+      <!--Header-->
+      <header>
+
+        
+        <nav class='navbar navbar-inverse navbar-expand-md navbar-fixed-top'>
+          <div class='container-fluid'>
+            <div class='navbar-header'>
+              <a href='#' class='navbar-brand'><span class='text-primary'>Cart</span></a>
+            </div>
+
+            
+        </nav>
+       
+
+      </header>
+      
+    <hr>
+
+    
+    <div class='container'>
+      <h2 class='orange'>Page 2 <small><a href="store.html">Back</a></small></h2>
+      
+
+    <div>
+        <div>
+            <b>items</b>
+        </div>
+        <div class="col-md-3 col-sm-4">
+            <h4 class="orange">Total</h4>
+            <b id="firstValue">0000</b>
+          </div>
+    </div>
+      
+      
+    
+
+    <footer>
+      <p> Aribsiala Abiola </p>
+    </footer>
+    
+    
+
+  </body>
+</html>
+
+<script>
+  
+
+  function addTheValue(secondValue) {
+      var fValue = document.getElementById("total");
+      total.innerHTML = parseInt(fValue.innerHTML) +
+      parseInt(secondValue);
+   }
+
+   function addTheValue(secondValue) {
+      var fValue = document.getElementById("firstValue");
+      firstValue.innerHTML = parseInt(fValue.innerHTML) +
+      parseInt(secondValue);
+   }
+
+
+</script>
